@@ -14,6 +14,16 @@ print(type(a), a)
 a={'a' :1,'b':2,'a':0}
 print(type(a), a)
 
+count_map = dict()
+inp_Str = "Hello World"
+for i in inp_Str:
+    count_map[i] = count_map.get(i, 0) + 1
+print(count_map)
+del count_map['W'] # delete element
+count_map.pop('e') # delete element
+print(count_map)
+count_map.popitem() # delete entire dict
+
 
 # Queue
 from queue import Queue
