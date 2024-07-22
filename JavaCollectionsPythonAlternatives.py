@@ -1,17 +1,17 @@
 # Below is list given in [], Python doesnt have array so no fixed size, list is used as array
-a=[1,2,3,1]
+a = [1, 2, 3, 1]
 print(type(a), a)
 
 # Tuple in python
 # Tuple is given in (). Tuple is similar to list but it is immutable
-a=(1,2,3,1)
+a = (1, 2, 3, 1)
 print(type(a), a)
 
 # This is Set Given in {}
-a={1,2,3,1}
+a = {1, 2, 3, 1}
 print(type(a), a)
 
-a={'a' :1,'b':2,'a':0}
+a = {'a': 1, 'b': 2, 'a': 0}
 print(type(a), a)
 
 count_map = dict()
@@ -19,14 +19,14 @@ inp_Str = "Hello World"
 for i in inp_Str:
     count_map[i] = count_map.get(i, 0) + 1
 print(count_map)
-del count_map['W'] # delete element
-count_map.pop('e') # delete element
+del count_map['W']  # delete element
+count_map.pop('e')  # delete element
 print(count_map)
-count_map.popitem() # delete entire dict
-
+count_map.popitem()  # delete entire dict
 
 # Queue
 from queue import Queue
+
 names = Queue()
 names.put("Alice")
 names.put("Bob")

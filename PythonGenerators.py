@@ -25,15 +25,17 @@ generator = (num ** 2 for num in range(10))
 for num in generator:
     print(num)
 
+
 # Fibonacci using Generator
 def genFibanocciSeries():
-
-    a=0
-    b=1
-    for x in range(1,10):
+    a = 0
+    b = 1
+    for x in range(1, 10):
         yield a
-        a,b = b, a+b
-a= int(input("Enter number to print fibonacci").strip() or 10)
-generator=genFibanocciSeries()
-for i in range(1,a):
+        a, b = b, a + b
+
+
+a = int(input("Enter number to print fibonacci").strip() or 10)
+generator = genFibanocciSeries()
+for i in range(1, a):
     print(next(generator))

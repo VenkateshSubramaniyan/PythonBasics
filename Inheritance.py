@@ -2,7 +2,7 @@ from Person import Person
 
 
 class Student(Person):
-  pass
+    pass
 
 x = Student("Mike", "Olsen")
 x.myfunc()
